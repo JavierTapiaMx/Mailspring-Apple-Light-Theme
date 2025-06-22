@@ -86,8 +86,18 @@ body.is-blurred .thread-list.handler-split .list-item.selected {
   background-color: #ffffff;
 }
 
-.participants {
+.thread-list .unread:not(.focused) .participants .unread-true,
+.draft-list .unread:not(.focused) .participants .unread-true {
   font-weight: 700;
+}
+
+.thread-list .unread:not(.focused) .subject,
+.draft-list .unread:not(.focused) .subject {
+  font-weight: 700;
+}
+
+.participants {
+  // font-weight: 700;
 }
 
 .thread-search-bar {
