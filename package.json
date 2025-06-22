@@ -1,6 +1,6 @@
 {
-  "name": "apple-theme",
-  "displayName": "Apple",
+  "name": "apple-light-theme",
+  "displayName": "Apple Light",
   "theme": "ui",
   "version": "1.0.2",
   "description": "Apple Light Theme for Mailspring.",
