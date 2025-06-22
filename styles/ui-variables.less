@@ -27,20 +27,32 @@
 // @sidebar: #3A1E15;
 // @accent: #F6AA1C;
 
+// Teal & Orange Color Palette
+@dark-orange: #ed5f0e;
+@orange: #ff963a;
+@yellow: #f8c577;
+@almost-white: #f1f0e6;
+@teal: #4ea5c2;
+
+//Alternative Color Palette
+@light-gray: #d3d6d4;
+@greenish-gray: #8d9e9b;
+@dark-gray: #2e323a;
+
 // Javier Tapia - Monochrome
-// @sidebar: #e7e7e7;
-// @accent: #313131;
+// @sidebar: @almost-white;
+// @accent: @dark-gray;
 
 // Javier Tapia
-@sidebar: #e7e7e7;
-@accent: #ec8b30;
+@sidebar: @almost-white;
+@accent: @orange;
 
 @accent-primary: @accent;
 @threadlist-bg: #fcfcfc;
 @messagelist-bg: tint(@sidebar, 100%);
 @active-thread-text: @sidebar;
-@sidebar-text: #000000;
-@active-sidebar-text: #000000;
+@sidebar-text: @dark-gray;
+@active-sidebar-text: @dark-gray;
 @border-color: fade(@sidebar, 100%);
 @danger: #ff5f56;
 @minimize: #fbd852;
@@ -49,6 +61,6 @@
 @swipe-snooze: #fbd852;
 @swipe-trash: @danger;
 @invalid: @danger;
-@gradient-accent: linear-gradient(135deg, #ec8b30 10%, #ffc288 80%);
+@gradient-accent: linear-gradient(135deg, @orange 10%, @yellow 80%);
 
 @sidebar-margin: 15px;
