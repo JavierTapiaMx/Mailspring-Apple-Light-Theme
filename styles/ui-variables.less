@@ -49,12 +49,20 @@
 @accent-alternative: @teal;
 
 @accent-primary: @accent;
-@threadlist-bg: #fcfcfc;
-@messagelist-bg: tint(@sidebar, 100%);
-@active-thread-text: @sidebar;
+
 @sidebar-text: @dark-gray;
+@sidebar-margin: 15px;
 @active-sidebar-text: @dark-gray;
 @border-color: fade(@sidebar, 100%);
+
+@gradient-accent: linear-gradient(135deg, @orange 10%, @yellow 80%);
+@threadlist-bg: #fcfcfc;
+// @active-thread-bg: @gradient-accent;
+@active-thread-bg: @yellow;
+@active-thread-text: @sidebar;
+
+@messagelist-bg: tint(@sidebar, 100%);
+
 @danger: #ff5f56;
 @minimize: #fbd852;
 @maximize: #8dd07d;
@@ -62,6 +70,3 @@
 @swipe-snooze: #fbd852;
 @swipe-trash: @danger;
 @invalid: @danger;
-@gradient-accent: linear-gradient(135deg, @teal 10%, @light-gray 80%);
-
-@sidebar-margin: 15px;
