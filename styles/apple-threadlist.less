@@ -78,7 +78,7 @@ body.is-blurred .thread-list.handler-split .list-item.selected {
 
 .thread-list .thread-icon.thread-icon-unread {
   background-image: none;
-  background-color: #388add !important;
+  background-color: @accent !important;
 }
 
 .thread-list .list-item,
@@ -86,8 +86,18 @@ body.is-blurred .thread-list.handler-split .list-item.selected {
   background-color: #ffffff;
 }
 
-.participants {
+.thread-list .unread:not(.focused) .participants .unread-true,
+.draft-list .unread:not(.focused) .participants .unread-true {
   font-weight: 700;
+}
+
+.thread-list .unread:not(.focused) .subject,
+.draft-list .unread:not(.focused) .subject {
+  font-weight: 700;
+}
+
+.participants {
+  // font-weight: 700;
 }
 
 .thread-search-bar {
@@ -119,9 +129,12 @@ body.is-blurred .thread-list.handler-split .list-item.selected {
 }
 
 .column-ThreadList {
+  font-family: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
   height: 100%;
   min-width: 100px !important;
-  max-width: 559px !important;
+  max-width: 800px !important;
+  width: 800px !important;
 }
 
 #sheet-container
