@@ -4,11 +4,16 @@
   background: @messagelist-bg;
 }
 
-// Make toolbars match panels
-.column-MessageList,
 .toolbar-MessageList,
-.column-MessageListSidebar,
 .toolbar-MessageListSidebar {
+  height: 100%;
+  background: @toolbar-bg;
+  color: @toolbar-text;
+  border-left: 1px solid @border-color;
+}
+
+.column-MessageList,
+.column-MessageListSidebar {
   height: 100%;
   background: @messagelist-bg;
   border-left: 1px solid @border-color;
@@ -168,4 +173,8 @@ body.platform-win32 .button-dropdown .secondary-picker:hover {
   > div
   > div {
   padding-bottom: 25px !important;
+}
+
+#inbox-html-wrapper.win32 {
+  font-family: system-ui, "Segoe UI", "Helvetica", sans-serif !important;
 }

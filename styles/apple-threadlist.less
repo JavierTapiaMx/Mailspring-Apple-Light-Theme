@@ -9,10 +9,17 @@
   margin-top: 6px;
 }
 
-// Make corresponding toolbar match threadlist background
-.column-ThreadList,
 .toolbar-ThreadList,
 .toolbar-MessageList {
+  height: 100%;
+  background: @toolbar-bg;
+  color: @toolbar-text;
+  border-bottom: 1px solid @border-color;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.column-ThreadList {
   height: 100%;
   background: #ffffff;
   border-bottom: 1px solid @border-color;
@@ -50,7 +57,7 @@
   box-shadow: 0px 0px 0px 12px #ffffff !important;
   border-radius: 9px !important;
   background: @accent;
-  color: #ffffff;
+  color: @almost-white;
   border: none !important;
   border: 1px solid #e9e9e9 !important;
 }
@@ -58,22 +65,22 @@
 body.is-blurred .list-container .list-item.focused,
 body.is-blurred .list-container .list-item.selected,
 body.is-blurred .thread-list.handler-split .list-item.selected {
-  background: @gradientaccent;
-  color: #ffffff;
+  background: @active-thread-bg;
+  color: @almost-white;
 }
 
 .list-container .list-item.focused,
 .list-container .list-item.selected,
 .thread-list.handler-split .list-item.selected {
-  background: @gradientaccent;
-  color: #ffffff;
+  background: @active-thread-bg;
+  color: @almost-white;
 }
 
 .body.is-blurred .list-container .list-item.focused,
 body.is-blurred .list-container .list-item.selected,
 body.is-blurred .thread-list.handler-split .list-item.selected {
   background: @accent;
-  color: #ffffff;
+  color: @almost-white;
 }
 
 .thread-list .thread-icon.thread-icon-unread {
@@ -133,7 +140,7 @@ body.is-blurred .thread-list.handler-split .list-item.selected {
     "Helvetica Neue", sans-serif;
   height: 100%;
   min-width: 200px !important;
-  // max-width: 559px !important;
+  max-width: 559px !important;
 }
 
 #sheet-container
@@ -157,8 +164,8 @@ body.is-blurred .thread-list.handler-split .list-item.selected {
   > div.thread-info-column
   > div.participants-wrapper
   > img {
-  filter: brightness(0) invert(57%) sepia(38%) saturate(4978%) hue-rotate(164deg) brightness(105%)
-    contrast(103%) !important;
+  filter: brightness(100%) invert(57%) sepia(38%) saturate(2%) hue-rotate(1deg) brightness(1200%)
+    contrast(100%) !important;
 }
 
 .thread-avatar > img {
