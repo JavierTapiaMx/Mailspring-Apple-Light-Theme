@@ -5,16 +5,14 @@
 }
 
 .notifications .notification {
-  background-color: @accent;
+  background-color: @accent-alternative;
   border: none;
 }
 
-.sidebar-activity {
-  background: darken(@sidebar, 5%);
-  color: @active-sidebar-text;
-  box-shadow: none;
+.notification.offline {
+  background: @danger;
 }
 
-.sidebar-activity .item {
-  border: none;
+.undo-redo-toast .content {
+  background-color: @accent-alternative;
 }
