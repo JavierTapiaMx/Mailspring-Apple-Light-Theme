@@ -9,10 +9,17 @@
   margin-top: 6px;
 }
 
-// Make corresponding toolbar match threadlist background
-.column-ThreadList,
 .toolbar-ThreadList,
 .toolbar-MessageList {
+  height: 100%;
+  background: @toolbar-bg;
+  color: @toolbar-text;
+  border-bottom: 1px solid @border-color;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.column-ThreadList {
   height: 100%;
   background: #ffffff;
   border-bottom: 1px solid @border-color;
