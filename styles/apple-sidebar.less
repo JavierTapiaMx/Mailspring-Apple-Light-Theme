@@ -9,7 +9,7 @@
 .account-sidebar,
 .toolbar-RootSidebar {
   height: 100%;
-  background-color: #e9e9e9;
+  background-color: @sidebar;
   // If NOT Retina display, subpixel-antialias fonts instead
   @media not screen and (-webkit-min-device-pixel-ratio: 1.3),
     not screen and (-o-min-device-pixel-ratio: 13/10),
@@ -231,7 +231,7 @@
 }
 
 .account-sidebar .add-item-button img #Starred {
-  background-color: #fabb25 !important;
+  background-color: @yellow !important;
 }
 
 .account-sidebar {
@@ -240,15 +240,11 @@
 
 .thread-list .thread-icon.thread-icon-star,
 .thread-list .thread-icon-star-on-hover:hover {
-  background-color: #ff0000;
+  background-color: @accent-alternative;
 }
 
 .sheet-toolbar .btn.btn-toolbar.item-compose {
   transform: translateX(-15px);
-}
-
-.sidebar-activity {
-  background: #e9e9e9;
 }
 
 .account-switcher {
